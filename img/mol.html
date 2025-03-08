@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Services</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->  
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="container.css">  
+    <!--social media icon website-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Add this in your <head> section -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    </head>
+    <style>
+        * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    } */
+
+    /* Carousel Container */
+    /* .carousel-container {
+      position: relative;
+      width: 80%;
+      max-width: 800px;
+      overflow: hidden;
+      border-radius: 15px;
+    } */
+
+    /* Carousel Track (holds all slides) */
+    .carousel-track {
+      display: flex;
+      transition: transform 2s ease-out; /* Slow down the transition */
+    }
+
+    /* Individual Slide */
+    .carousel-slide {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      min-width: 100%;
+      padding: 20px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      color: #333;
+      cursor: pointer;
+    }
+
+    /* Image in each slide */
+    .carousel-slide img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .carousel-slide h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #0073e6;
+    }
+
+    .carousel-slide p {
+      color: #555;
+      font-size: 1.1em;
+    }
+
+    /* Optional: alternating background color for slides */
+    .carousel-slide:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+
+    .carousel-slide:nth-child(even) {
+      background-color: #fafafa;
+    }
+
+    /* Scroll Buttons */
+    .scroll-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 10px;
+    }
+
+    .scroll-button {
+      width: 20px;
+      height: 20px;
+      background-color: #ddd;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .scroll-button.active {
+      background-color: green;
+    }
+       
+    </style>
+   <body>
+      <!-- header section start -->
+      <div class="header_section">
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar" id="navbar">
+       <div class="logo">
+           <a href="#"><img src="Logo Name.png" alt="Logo"></a>
+       </div>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+   
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav ml-auto">
+               <li class="nav-item active">
+                   <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="about.html">About Us</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="career.html">Careers</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="services.html">Services</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="contact.html">Contact Us</a>
+               </li>
+           </ul>
+       </div>
+   </nav>
+   
+     
+   <script>
+     // Get the navbar element
+   const navbar = document.getElementById('navbar');
+   
+   // Function to handle the scroll effect
+   window.onscroll = function() {
+       if (window.scrollY > 50) {  // When user scrolls down 50px or more
+           navbar.classList.add('shrink');
+       } else {
+           navbar.classList.remove('shrink');
+       }
+   };
+   </script>
+   
+   <!-- Bootstrap JS and Popper (required for navbar toggle on mobile) -->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+   
+  
+      <!-- header section end -->
+
+      <div class="carousel-container" id="carousel">
+        <div class="carousel-track">
+          <!-- Slide 1: AI Full Stack Course -->
+          <div class="carousel-slide" data-slide="0">
+            <img src="https://via.placeholder.com/100" alt="AI Full Stack">
+            <h3>AI Full Stack Development</h3>
+            <p>Learn the fundamentals of AI and Full Stack Development. Build your own AI-powered web applications.</p>
+          </div>
+          <!-- Slide 2: 2D Course -->
+          <div class="carousel-slide" data-slide="1">
+            <img src="https://via.placeholder.com/100" alt="2D Course">
+            <h3>2D Animation Course</h3>
+            <p>Master 2D animation techniques and bring your illustrations to life with industry-standard tools.</p>
+          </div>
+          <!-- Slide 3: 3D Course -->
+          <div class="carousel-slide" data-slide="2">
+            <img src="https://via.placeholder.com/100" alt="3D Course">
+            <h3>3D Modeling & Animation</h3>
+            <p>Learn how to create stunning 3D models and animations using cutting-edge software.</p>
+          </div>
+          <!-- Slide 4: Animation Course -->
+          <div class="carousel-slide" data-slide="3">
+            <img src="https://via.placeholder.com/100" alt="Animation Course">
+            <h3>Animation Fundamentals</h3>
+            <p>Understand the principles of animation and learn how to create professional animations.</p>
+          </div>
+          <!-- Slide 5: Graphic Design Course -->
+          <div class="carousel-slide" data-slide="4">
+            <img src="https://via.placeholder.com/100" alt="Graphic Design">
+            <h3>Graphic Design Mastery</h3>
+            <p>Become a pro in graphic design. Learn design theory, typography, and digital art techniques.</p>
+          </div>
+          <!-- Slide 6: Web Design Course -->
+          <div class="carousel-slide" data-slide="5">
+            <img src="https://via.placeholder.com/100" alt="Web Design">
+            <h3>Web Design & UX/UI</h3>
+            <p>Master web design principles, creating user-friendly websites with great user experiences.</p>
+          </div>
+          <!-- Slide 7: Video Editing Course -->
+          <div class="carousel-slide" data-slide="6">
+            <img src="https://via.placeholder.com/100" alt="Video Editing">
+            <h3>Video Editing Techniques</h3>
+            <p>Learn how to edit professional-quality videos using modern video editing software.</p>
+          </div>
+          <!-- Slide 8: Digital Marketing Course -->
+          <div class="carousel-slide" data-slide="7">
+            <img src="https://via.placeholder.com/100" alt="Digital Marketing">
+            <h3>Digital Marketing Mastery</h3>
+            <p>Master the art of digital marketing, including SEO, SEM, and social media marketing.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Scroll Buttons -->
+      <div class="scroll-buttons">
+        <div class="scroll-button" id="btn1"></div>
+        <div class="scroll-button" id="btn2"></div>
+        <div class="scroll-button" id="btn3"></div>
+        <div class="scroll-button" id="btn4"></div>
+        <div class="scroll-button" id="btn5"></div>
+        <div class="scroll-button" id="btn6"></div>
+        <div class="scroll-button" id="btn7"></div>
+        <div class="scroll-button" id="btn8"></div>
+      </div>
+      
+      
+      
+<br><br>
+
+
+
+      <!-- news section start -->
+      <div class="news_section layout_padding">
+         <div class="container">
+            
+             <h1 class="health_taital"style="color:green"><b>OUR CORE SERVICES</b></h1> <br>
+             <!-- <p class="health_text">"Our full service team of Grow Wake professionals are ready here to help you."</p> -->
+            <br> <h3>Our full-service team of Grow Wake professionals is here to assist you.</h3>
+
+             <div class="news_section_2 layout_padding">
+             <!-- Box 1: Software Testing -->
+             <div class="box">
+                <div class="ico">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h1>Software Testing</h1>
+                <p>Software testing ensures that a software application functions correctly and is free of bugs, using both manual and automated testing methods.</p>
+                <a href="serviceupdate.html">
+                    <!-- <button><i class="fa-solid fa-arrow-right"></i></button> -->
+                </a>
+                
+            </div>
+             <!-- Box 2: IOT (Internet of Things) -->
+             <div class="box">
+               <div class="ico">
+                   <i class="fa-solid fa-globe"></i>
+               </div>
+               <h1>IOT(Internet Of Things)</h1>
+               <p>IOT (Internet Of Things) connects devices to collect and exchange data, using tools like sensors, cloud platforms, MQTT IOT frameworks, Arduino, and Raspberry Pi.</p>
+               <a href="serviceupdate.html">
+                <!-- <button><i class="fa-solid fa-arrow-right"></i></button> -->
+             </a>
+           </div>
+            <!-- Box 3: Front end developer -->
+            <div class="box">
+               <div class="ico">
+                   <i class="fa-brands fa-slack"></i>
+               </div>
+               <h1>Front End Developer</h1>
+               <p>A front-end developer creates and designs the user interface of websites and applications, 
+                               focusing on how they look and function for users.</p>
+                               <a href="serviceupdate.html">
+                                <!-- <button><i class="fa-solid fa-arrow-right"></i></button> -->
+                             </a>
+           </div>
+            <!-- Box 4: backend developer -->
+            <div class="box">   
+               <div class="ico">
+                   <i class="fa-solid fa-spinner"></i>
+               </div>
+               <h1>Back End Developer</h1>
+               <p>A back-end developer builds and manages the server, database, and application logic to ensure the website or 
+                app functions smoothly behind the scenes.</p>
+               <a href="serviceupdate.html">
+                <!-- <button><i class="fa-solid fa-arrow-right"></i></button> -->
+             </a>
+           </div>
+           <!-- Box 5: Full stack developer -->
+            <div class="box">
+                <div class="ico">
+                    <i class="fa-brands fa-codepen"></i>
+               </div>
+                <h1>Full Stack Developer</h1>
+                <p>A full-stack developer works on both the front-end and back-end of websites or applications, handling both design
+                     and functionality.</p>
+                <a href="serviceupdate.html">
+                    <!-- <button><i class="fa-solid fa-arrow-right"></i></button> -->
+                 </a>
+            </div>
+            <!-- Box 6: Multi Media -->
+            <div class="box">
+                <div class="ico">
+                    <i class="fa-solid fa-compact-disc"></i>
+               </div>
+                <h1>Multi Media</h1>
+                <p>A simple multimedia intro uses text, images, audio and video, created with tools like Adobe Photoshop, 
+                    Illustrator, InDesign, Premiere Pro, and After Effects.</p>
+                <a href="serviceupdate.html">
+                    <!-- <button><i class="fa-solid fa-arrow-right"></i></button> -->
+                 </a>
+            </div>
+
+            <!-- Box 7: Devops -->
+            <div class="box">
+                <div class="ico">
+                    <i class="fa-brands fa-dev"></i>
+                </div>
+                <h1>DevOps</h1>
+                <p>DevOps combines development and operations to improve software delivery, using tools like Git, Jenkins, Docker, Kubernetes, and Terraform.</p>
+                <a href="serviceupdate.html">
+                    <!-- <button><i class="fa-solid fa-arrow-right"></i></button> -->
+                 </a>
+            </div> 
+            <!-- Box 9: Digital Marketing -->
+            <div class="box">
+                <div class="ico">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <h1>Graphic Designer</h1>
+                <p>A graphic designer creates visual content, like logos, posters, 
+                    and layouts to communicate ideas and messages effectively.</p>
+                <a href="serviceupdate.html">
+                    <!-- <button><i class="fa-solid fa-arrow-right"></i></button> -->
+                 </a>
+            </div>                
+            <!-- Box 9: Data Analyst -->
+            <div class="box">
+                <div class="ico">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <h1>Data Analyst</h1>
+                <p>A data analyst analyzes, collects, and processes data to support decision-making,
+                     using tools like Excel, SQL, Python, R, Tableau, and Power BI.</p>
+                <a href="serviceupdate.html">
+                    <!-- <button><i class="fa-solid fa-arrow-right"></i></button> -->
+                 </a>
+            </div>
+              <!-- Box 10: AI -->
+            <div class="box">
+                <div class="ico">
+                   <i class="fa-solid fa-qrcode"></i>
+                </div>
+                <h1>AI</h1>
+                <p>AI (Artificial Intelligence) refers to the simulation of human intelligence in machines that are
+                     programmed to think, learn, and perform tasks such as problem-solving, language processing, and decision-making.</p>
+                <a href="serviceupdate.html">
+                    <!-- <button><i class="fa-solid fa-arrow-right"></i></button> -->
+                 </a>
+            </div>
+            <!-- Box 11: AWS -->
+           <div class="box">
+            <div class="ico">
+               <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            <h1>ML</h1>
+            <p>Machine Learning (ML) is a technology where computers learn from data to 
+                make predictions or decisions without being explicitly programmed.</p>
+            <a href="serviceupdate.html">
+                <!-- <button><i class="fa-solid fa-arrow-right"></i></button> -->
+             </a>
+        </div>                
+              
+           <!-- Box 12: ML -->
+           <div class="box">
+            <div class="ico">
+               <i class="fa-solid fa-gear"></i>
+            </div>
+            <h1>AWS & Cloud computing</h1>
+            <p>
+             Cloud computing lets you use computing power and storage online instead of owning servers,
+              and AWS is a leading platform offering these services on a pay-as-you-go basis.</p>
+             <a href="serviceupdate.html">
+                <!-- <button><i class="fa-solid fa-arrow-right"></i></button> -->
+             </a>
+            </div> 
+        <div class="box">
+            <div class="ico">
+             <i class="fa-solid fa-photo-film"></i> 
+            </div>
+        
+            <h1>Digital-Marketing</h1>
+            <p>
+             Your one-stop destination for dynamic visuals and interactive content. 
+             We deliver innovative multimedia solutions including graphics, videos, and animations to bring your ideas to life. 
+             Experience creativity like never before.</p>
+             <a href="serviceupdate.html">
+                <!-- <button><i class="fa-solid fa-arrow-right"></i></button> -->
+             </a>
+            </div> 
+        <div class="box">
+            <div class="ico">
+                <i class="fa-brands fa-python"></i> 
+            </div>
+            <h1>Python Developer</h1>
+            <p>
+                A Python developer is a person who writes code in the Python programming language to build 
+                software applications, websites, or automation tools. They use Python's easy-to-read syntax and vast set of
+                 libraries to solve problems and create programs.</p>
+                <a href="serviceupdate.html">
+                    <!-- <button><i class="fa-solid fa-arrow-right"></i></button> -->
+                 </a>
+            </div> 
+
+        <div class="box">
+            <div class="ico">
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <h1>MERN Stack</h1>
+            <p>
+                We build modern, responsive, and scalable web applications using the
+                 powerful MERN stack: MongoDB, Express.js, React, and Node.js.            </p>
+                <a href="serviceupdate.html">
+                    <!-- <button><i class="fa-solid fa-arrow-right"></i></button> -->
+                 </a>
+            </div>
+            <div class="center_service">
+                <div class="contact_bt"><a href="./contact.html">Registration</a></div>
+<br>
+            </div>
+    </div>
+</div>    
+
+      <!-- news section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <!-- Logo Section -->
+               <div class="col-lg-3 col-sm-6">
+                  <div class="footer_logo">
+                     <a href="#">
+                        <img src="Logo Name.png" alt="Logo">
+                     </a>
+                  </div>
+               </div>
+               
+               <!-- Contact Section -->
+               <div class="col-lg-3 col-sm-6">
+                <h1 class="adderss_text">CONTACT US</h1>
+                <!-- Location: Google Maps link -->
+               <!-- Location Section with icon and address -->
+               <div class="map_icon">
+                <!-- <a href="https://maps.app.goo.gl/rSqyUf8o2iWruhhi8?g_st=aw" target="_blank"> -->
+                   <img src="images/map-icon.png">
+                   <span style="padding-left: 10px; font-family: Arial, sans-serif; font-size: 16px; ">
+                    Palakkarai Trichy - 620008
+                </span>
+                
+                </a>
+             </div>
+                  <!-- Phone number: WhatsApp link -->
+                  <div class="map_icon">
+                    <!-- Link for dialing the phone number -->
+                    <a href="tel:+918778612248">
+                        <img src="images/call-icon.png" alt="Call Icon">
+                        <span class="paddlin_left_0">+91 8778612248</span>
+                    </a>
+                </div>
+                
+                  <!-- Email: Mailto link -->
+                  <div class="map_icon">
+                     <a href="mailto:growwakeofficial@gmail.com">
+                        <img src="images/mail-icon.png">
+                        <span class="paddlin_left_0">growwakeofficial@gmail.com</span>
+                     </a>
+                  </div>
+               </div>
+      
+               <!-- Quick Navigation Section -->
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="adderss_text">QUICK NAVIGATION</h1>
+                  <div class="Useful_text">
+                     <a href="index.html">Home</a>
+                     <a href="about.html">About Us</a>
+                     <a href="services.html">Services</a>
+                     <a href="career.html">Careers</a>
+                     <a href="contact.html">Contact Us</a>
+                     <a href="./term.html">Terms And Conditions</a>
+                     <a href="privacy-policy.html">Privacy Policy</a>
+                  </div>
+               </div>
+      
+               <!-- Feedback Section -->
+               <div class="col-lg-3 col-sm-6">
+                <h1 class="adderss_text">FEEDBACK</h1>
+                <!-- WhatsApp link with logo -->
+                <div class="map_icon">
+                    <a href="https://wa.me/+918778612248" target="_blank">
+                        <!-- WhatsApp icon from Font Awesome -->
+                        <i class="fab fa-whatsapp "style="color:green"></i>
+                        <span class="paddlin_left_0">+91 8778612248</span>
+                    </a>
+                </div>
+
+
+
+
+                <!-- enquiry bt -->
+                <div class="subscribe_bt">
+                    <a href="https://wa.me/+918778612248">More Enquiry</a>
+                 </div>
+
+
+
+
+
+
+
+
+
+
+                  <div class="social_icon">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=61570572741744&mibextid=ZbWKwL">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/Grow_Wake?t=FyFpyRsXWOpjzX2ypnrtSg&s=09">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.instagram.com/grow_wake007/profilecard/?igsh=MWVjeWU5aWIzbHU4bA==">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.linkedin.com">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+               </div>
+               <div class="copyright_section">
+                <div class="container">
+                   <p class="copyright_text">Grow Wake Pvt.Ltd copyrights 2024 </p>
+                </div>
+             </div>
+           
+            </div>
+         </div>
+      </div>
+
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <!-- <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">Grow Wake Pvt.Ltd copyrights 2024 </p>
+         </div>
+      </div> -->
+      <!-- copyright section end -->
+   </body>
+   <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+     
+     <style>    
+      .news_section_2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Box Styles */
+.box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox to align children */
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center vertically within the box */
+    align-items: center; /* Center horizontally within the box */
+    height: 300px; /* Set a fixed height for consistent alignment */
+}
+
+/* Box Hover Effect */
+.box:hover {
+    /* background-color: #007bff; */
+    background-color: #50a8a8;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Icon Styles */
+.ico {
+    font-size: 40px;
+     color:#50a8a8; /*Icon color */
+    margin-bottom: 20px; /* Add space between the icon and the text */
+    background-color: transparent; /* Ensure no background color for the icon */
+    padding: 0; /* Remove any padding */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for transformation and opacity */
+}
+
+/* Icon Rotation and Scaling on Hover */
+.box:hover .ico i {
+    transform: rotate(360deg) scale(1.2); /* Rotate the icon and scale it up */
+    opacity: 1; /* Ensure the icon is fully visible */
+}
+
+/* Icon Rotation on Hover */
+.ico {
+            font-size: 40px;
+            /* color: #007bff; */
+            color: 50a8a8;
+            margin-bottom: 10px;
+        }
+
+        .ico i {
+            transition: transform 0.3s ease;
+        }
+
+        .box:hover .ico i {
+            transform: rotate(360deg);
+        }
+
+/* Button Styles */
+button {
+    background-color: transparent; /* Remove any background color */
+    border: none; /* Remove any borders */
+    font-size: 20px;
+    color: #007bff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 0; /* Remove extra padding around the button */
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Vertically align icon and text */
+    justify-content: center; /* Center the content inside the button */
+}
+
+/* Icon Styles inside Button */
+button i {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    background-color: transparent; /* Ensure no background around the icon */
+    margin-left: 5px; /* Add a little space between the text and icon */
+}
+
+/* Hover effect for Button */
+button:hover {
+    color: white;
+    transform: translateX(10px); /* Move the button to the right on hover */
+}
+
+/* Hover effect for Icon */
+button:hover i {
+    transform: translateX(5px); /* Move the icon to the right on hover */
+}
+
+      /* Footer Section */
+.footer_section {
+    padding: 50px 0;
+    background: color #252525;
+}
+
+/* Container Flexbox for Footer */
+.footer_section .container {
+    display: flex;
+    flex-wrap: wrap;  /* Allow items to wrap if screen size is small */
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Columns in the Footer */
+.footer_section .row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping of columns */
+}
+
+.col-lg-3 {
+    flex: 1;
+    margin-right: 20px;
+    padding: 10px;  /* Ensure padding for spacing */
+}
+
+.col-lg-3:last-child {
+    margin-right: 0;
+}
+
+/* Footer Logo */
+.footer_logo {
+    margin-bottom: 20px;
+}
+
+.footer_logo img {
+    width: 150px; /* Adjust size of logo */
+}
+
+/* Contact Section */
+.adderss_text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.map_icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.map_icon img {
+    margin-right: 10px;
+}
+
+/* Quick Navigation Section */
+.Useful_text a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+/* Feedback Section */
+.Enter_text {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscribe_bt a {
+    padding: 10px 20px;
+    /* background-color: green; */
+    background-color: #50a8a8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Social Icons */
+.social_icon ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social_icon li {
+    margin-right: 10px;
+}
+
+.social_icon img {
+    width: 30px;
+    height: 30px;   
+}
+/* box conteriner in */
+@media (max-width: 768px) {
+    .news_section_2 {
+        display: grid; /* Use grid layout */
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        gap: 15px; /* Reduce the gap for smaller screens */
+        justify-items: flex-end; /* Align all boxes to the right */
+    }
+
+    .box {
+        height: auto; /* Allow boxes to adjust height dynamically */
+        padding: 15px; /* Adjust padding for smaller screens */
+        width: 100%; /* Make sure boxes take full width */
+    }
+
+    /* Optional: Adjust button size to fit well on smaller screens */
+    .box button {
+        font-size: 14px; /* Reduce button font size */
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+
+    /* Optional: Adjust icon size inside boxes */
+    .box .ico {
+        font-size: 25px; /* Adjust icon size */
+        margin-bottom: 10px; /* Reduce space between icon and text */
+    }
+
+    /* Adjust text size in boxes */
+    .box h1 {
+        font-size: 18px; /* Reduce heading size */
+    }
+
+    .box p {
+        font-size: 14px; /* Reduce paragraph text size */
+    }
+}
+
+</style>
+<script>
+    const carousel = document.getElementById('carousel');
+    const carouselTrack = carousel.querySelector('.carousel-track');
+    const buttons = document.querySelectorAll('.scroll-button');
+    
+    const slides = document.querySelectorAll('.carousel-slide');
+    let currentSlide = 0;
+  
+    // Function to move to a specific slide
+    function moveToSlide(slideIndex) {
+      const slideWidth = carousel.offsetWidth; // Get the carousel width
+      const offset = slideIndex * slideWidth; // Calculate the offset to move
+      
+      // Apply slow transition of 2s
+      carouselTrack.style.transition = 'transform 2s ease-out';
+      carouselTrack.style.transform = `translateX(-${offset}px)`; // Apply the transformation
+      currentSlide = slideIndex; // Update the current slide
+  
+      // Reset all buttons to default and highlight the current one
+      buttons.forEach(btn => btn.classList.remove('active'));
+      buttons[slideIndex].classList.add('active');
+    }
+  
+    // Function to show the first 3 slides initially and then move one by one
+    function showAndMoveSlides() {
+      // Initially show the first 3 slides
+      carouselTrack.style.transform = `translateX(0px)`; // Show the first 3 slides
+      buttons[0].classList.add('active'); // Mark the first button as active
+  
+      // Start moving the first container after 3 seconds, one by one
+      setTimeout(() => {
+        moveToSlide(1); // Move to the second container
+      }, 3000);
+  
+      setTimeout(() => {
+        moveToSlide(2); // Move to the third container
+      }, 6000);
+  
+      setTimeout(() => {
+        moveToSlide(3); // Move to the fourth container
+      }, 9000);
+  
+      setTimeout(() => {
+        moveToSlide(4); // Move to the fifth container
+      }, 12000);
+  
+      setTimeout(() => {
+        moveToSlide(5); // Move to the sixth container
+      }, 15000);
+  
+      setTimeout(() => {
+        moveToSlide(6); // Move to the seventh container
+      }, 18000);
+  
+      setTimeout(() => {
+        moveToSlide(7); // Move to the eighth container
+      }, 21000);
+    }
+  
+    // Add event listeners to each button
+    buttons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        moveToSlide(index); // Move to the slide corresponding to the clicked button
+      });
+    });
+  
+    // Show and start moving slides sequentially
+    showAndMoveSlides();
+  </script>
+<script>
+
+    //// whatsapp country code///
+    function updatePhoneNumber() {
+        var countryCode = '+91'; 
+        var localNumber = '8778612248'; 
+        
+        var fullPhoneNumber = countryCode + localNumber;
+        
+        document.getElementById('whatsapp-link').href = 'https://wa.me/' + fullPhoneNumber;
+
+        document.getElementById('8778612248').textContent = countryCode + ' ' + localNumber;
+    }
+
+    updatePhoneNumber();
+</script>
+
+
+</html>

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Career</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+       <!--social media icon website-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+   <body>
+      <!-- header section start -->
+      <div class="header_section">
+         <nav class="navbar navbar-expand-lg navbar-light custom-navbar" id="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="Logo Name.png" alt="Logo"></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="career.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+      
+    <script>
+      // Get the navbar element
+    const navbar = document.getElementById('navbar');
+    
+    // Function to handle the scroll effect
+    window.onscroll = function() {
+        if (window.scrollY > 50) {  // When user scrolls down 50px or more
+            navbar.classList.add('shrink');
+        } else {
+            navbar.classList.remove('shrink');
+        }
+    };
+    </script>
+    
+    <!-- Bootstrap JS and Popper (required for navbar toggle on mobile) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .row-container {
+            margin-bottom: 30px     ;
+            width: 60%;
+        }
+        .row-header {
+            background-color: #009688;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .row-header:hover {
+            background-color: #00796b;
+        }
+        .icon-box {
+            background-color: #00796b;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon {
+            font-size: 25px;
+            color: white;
+            transition: transform 0.3s;
+        }
+        .icon.open {
+            transform: rotate(180deg);
+        }
+        .row-content {
+            display: none;
+            background-color: #e0f2f1;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        .career-section {
+            width: 100%;
+        }
+        .contact_box {
+            width: 60%;
+            background-color: #b5eaf1;
+            padding: 20px;
+            
+        }
+        .Email_text, .massage-bt {
+            width: 100%;
+            font-size: 18px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width:40%;
+            margin-top: 10px;
+            margin-left: 30%;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+
+
+
+        
+        @media (max-width: 750px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact_box, .career-section {
+                width: 100%;
+            }
+        }
+
+         /* Adjustments for extra small screens (400px) */
+    @media (max-width: 400px) {
+        .career-section,
+        .contact-box {
+            width: 150%;
+            margin-left: 50%;
+        }
+
+        .contact-box input,
+        .contact-box textarea {
+            font-size: 14px;
+            padding: 8px;
+            width: 100%;
+        }
+    }
+
+    </style>
+    <body>
+        <br><br>
+        <!-- Career Opportunities Section -->
+        <div class="container">
+            <div class="career-section">
+                <div class="career-box">
+                    
+                    <div class="row-container">
+                        <div class="row-header" onclick="toggleRow(1)">
+                            <div class="icon-box">
+                                <span id="icon-1" class="icon">+</span>
+                            </div>
+                            <span class="title">IOT</span>
+                        </div>
+                        <div id="row-1" class="row-content">
+                            <p>Join our team! We're looking for talented individuals to help innovate and build the future of IOT. Apply now and be part of our growing team  !</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="career-box">
+                    <div class="row-container">
+                        <div class="row-header" onclick="toggleRow(2)">
+                            <div class="icon-box">
+                                <span id="icon-2" class="icon">+</span>
+                            </div>
+                            <span class="title">Full Stack Development</span>
+                        </div>
+                        <div id="row-2" class="row-content">
+                            <p>We're hiring Full Stack Developers! If you have a passion for building dynamic and scalable web applications, we want to hear from you. Join our innovative team and take your career to the next level. Apply now and be part of our growing team !</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="career-box">
+                    <div class="row-container">
+                        <div class="row-header" onclick="toggleRow(3)">
+                            <div class="icon-box">
+                                <span id="icon-3" class="icon">+</span>
+                            </div>
+                            <span class="title">DevOps</span>
+                        </div>
+                        <div id="row-3" class="row-content">
+                            <p>We're looking for skilled DevOps Engineers! If you have experience in automating, managing, and scaling cloud infrastructure, join our team and help us build seamless, efficient systems. Apply now and be part of our growing team!</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="career-box">
+                    <div class="row-container">
+                        <div class="row-header" onclick="toggleRow(4)">
+                            <div class="icon-box">
+                                <span id="icon-4" class="icon">+</span>
+                            </div>
+                            <span class="title"> Data Scientist </span>
+                        </div>
+                        <div id="row-4" class="row-content">
+                            <p>We're hiring Data Scientists! If you're passionate about analyzing complex data, developing predictive models, and driving data-driven decisions, we want you on our team. Apply now and be part of our growing team!</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="career-box">
+                 
+                    <div class="row-container">
+                        <div class="row-header" onclick="toggleRow(5)">
+                            <div class="icon-box">
+                                <span id="icon-5" class="icon">+</span>
+                            </div>
+                            <span class="title">Python Developer</span>
+                        </div>
+                        <div id="row-5" class="row-content">
+                            <p>We are hiring a skilled Python Developer to build and optimize backend solutions, work on innovative projects, and contribute to cutting-edge technologies. Apply now and be part of our growing team!</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="career-box">
+                
+                    <div class="row-container">
+                        <div class="row-header" onclick="toggleRow(6)">
+                            <div class="icon-box">
+                                <span id="icon-6" class="icon">+</span>
+                            </div>
+                            <span class="title">Medical Coding</span>
+                        </div>
+                        <div id="row-6" class="row-content">
+                            <p>We're hiring Medical Coders! If you have experience in medical coding, attention to detail, and a passion for ensuring accuracy in healthcare documentation, we want you on our team. Apply now and be part of our growing team!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact_box">
+                <h1>Grow Wake Careers</h1>
+                <form id="contactForm">
+                    <input type="text" class="Email_text" placeholder="Name" id="Name" name="name" required>
+                    <input type="email" class="Email_text" placeholder="Email Id" id="Email" name="email" required>
+                    <input type="text" class="Email_text" placeholder="Phone no" id="Phone" name="phone" maxlength="10" required>
+                    <input type="text" class="Email_text" placeholder="Job Role" id="Job" name="job" required>
+                    <textarea class="massage-bt" placeholder="Message" rows="5" id="Message" name="message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            function toggleRow(id) {
+                var content = document.getElementById('row-' + id);
+                var icon = document.getElementById('icon-' + id);
+                if (content.style.display === "none" || content.style.display === "") {
+                    content.style.display = "block";
+                    icon.classList.add("open");
+                } else {
+                    content.style.display = "none";
+                    icon.classList.remove("open");
+                }
+            }
+        </script>
+    </body>
+    
+    <br><br>
+<script>
+   
+document.querySelectorAll("#contactForm input, #contactForm textarea").forEach(input => {
+    input.addEventListener("blur", validateField);
+    input.addEventListener("input", validateField);
+});
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    let valid = true;
+    document.querySelectorAll("#contactForm input, #contactForm textarea").forEach(input => {
+        if (!validateField({ target: input })) {
+            valid = false;
+        }
+    });
+    if (valid) {
+        alert("Form submitted successfully!");
+       
+    }
+});
+
+// Function to validate a single field
+function validateField(event) {
+    const input = event.target;
+    const value = input.value.trim();
+    let message = "";
+
+    // Determine validation rules for each field
+    if (input.id === "Phone") {
+        const phoneRegex = /^\d{10}$/;
+        if (!phoneRegex.test(value)) {
+            message = "Phone number must be exactly 10 digits.";
+        }
+    } else if (input.id === "Email") {
+        const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+        if (!emailRegex.test(value)) {
+            message = "Email must be in lowercase and valid format.";
+        }
+    } else if (value === "") {
+        message = `${input.placeholder} is required.`;
+    }
+
+    // Display or clear the error message
+    if (message) {
+        showError(input, message);
+        return false;
+    } else {
+        clearError(input);
+        return true;
+    }
+}
+
+// Function to display error messages
+function showError(input, message) {
+    // Check if an error message already exists
+    let errorLabel = input.parentNode.querySelector(".error-message");
+    if (!errorLabel) {
+        errorLabel = document.createElement("label");
+        errorLabel.className = "error-message";
+        errorLabel.style.color = "red"; // Error color
+        input.parentNode.appendChild(errorLabel);
+    }
+    errorLabel.textContent = message;
+
+    // Ensure error message appears below the email input field
+    if (input.id === "Email") {
+        errorLabel.style.display = "block"; // Make sure it is visible
+        input.style.borderColor = "red"; // Optional: change border color of the input field to indicate an error
+    }
+}
+
+// Function to clear error messages
+function clearError(input) {
+    const errorLabel = input.parentNode.querySelector(".error-message");
+    if (errorLabel) {
+        errorLabel.remove();
+    }
+
+    // Reset input field border color
+    if (input.id === "Email") {
+        input.style.borderColor = ""; // Remove red border on valid input
+    }
+}
+
+
+/// name only type for the text content condition ////
+
+document.addEventListener("DOMContentLoaded", function () {
+        const nameInput = document.querySelector('input[name="name"]');
+
+        nameInput.addEventListener("input", function () {
+            const nameValue = nameInput.value;
+            clearError(nameInput);
+
+            // Allow only letters and spaces
+            if (!/^[a-zA-Z\s]*$/.test(nameValue)) {
+                displayError(nameInput, "Name must contain only letters and spaces.");
+                nameInput.value = nameValue.replace(/[^a-zA-Z\s]/g, ""); // Remove invalid characters
+            }
+        });
+
+        function displayError(inputElement, message) {
+            clearError(inputElement); 
+            const errorBox = document.createElement("div");
+            errorBox.className = "error-message";
+            errorBox.style.color = "red";
+            errorBox.style.fontSize = "0.9em";
+            errorBox.style.marginTop = "4px";
+            errorBox.textContent = message;
+            inputElement.insertAdjacentElement("afterend", errorBox);
+        }
+        function clearError(inputElement) {
+            const nextElement = inputElement.nextElementSibling;
+            if (nextElement && nextElement.classList.contains("error-message")) {
+                nextElement.remove();
+            }
+        }
+    });
+/// end /////
+/// phone number only type for the number condition ////
+    document.addEventListener("DOMContentLoaded", function () {
+        const phoneInput = document.querySelector('input[name="phone"]');
+
+        // Real-time validation for the phone number field
+        phoneInput.addEventListener("input", function () {
+            const phoneValue = phoneInput.value;
+            clearError(phoneInput);
+
+            // Allow only numbers (digits)
+            if (!/^\d*$/.test(phoneValue)) {
+                displayError(phoneInput, "Phone number must contain only numbers.");
+                phoneInput.value = phoneValue.replace(/[^\d]/g, ""); // Remove invalid characters
+            }
+        });
+
+        // Helper function to display error messages
+        function displayError(inputElement, message) {
+            clearError(inputElement); // Ensure no duplicate error messages
+            const errorBox = document.createElement("div");
+            errorBox.className = "error-message";
+            errorBox.style.color = "red";
+            errorBox.style.fontSize = "0.9em";
+            errorBox.style.marginTop = "4px";
+            errorBox.textContent = message;
+            inputElement.insertAdjacentElement("afterend", errorBox);
+        }
+
+        // Helper function to clear error messages
+        function clearError(inputElement) {
+            const nextElement = inputElement.nextElementSibling;
+            if (nextElement && nextElement.classList.contains("error-message")) {
+                nextElement.remove();
+            }
+        }
+    });
+
+///// end ////
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const jobRoleInput = document.querySelector('input[name="job"]');
+
+        // Real-time validation for the job role field
+        jobRoleInput.addEventListener("input", function () {
+            const jobRoleValue = jobRoleInput.value;
+            clearError(jobRoleInput);
+
+            // Allow only letters and spaces (no numbers or special characters)
+            if (!/^[A-Za-z\s]*$/.test(jobRoleValue)) {
+                displayError(jobRoleInput, "Job role must contain only letters and spaces.");
+                jobRoleInput.value = jobRoleValue.replace(/[^A-Za-z\s]/g, ""); // Remove invalid characters
+            }
+        });
+
+        // Helper function to display error messages
+        function displayError(inputElement, message) {
+            clearError(inputElement); // Ensure no duplicate error messages
+            const errorBox = document.createElement("div");
+            errorBox.className = "error-message";
+            errorBox.style.color = "red";
+            errorBox.style.fontSize = "0.9em";
+            errorBox.style.marginTop = "4px";
+            errorBox.textContent = message;
+            inputElement.insertAdjacentElement("afterend", errorBox);
+        }
+
+        // Helper function to clear error messages
+        function clearError(inputElement) {
+            const nextElement = inputElement.nextElementSibling;
+            if (nextElement && nextElement.classList.contains("error-message")) {
+                nextElement.remove();
+            }
+        }
+    });
+
+
+    
+</script>
+    <!-- Footer Section -->
+    <div class="footer_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer_logo">
+                        <!-- <a href="#"> -->
+                            <img src="Logo Name.png" alt="Logo">
+                        <!-- </a> -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h1 class="adderss_text">CONTACT US</h1>
+                    <!-- Location: Google Maps link -->
+                    <div class="map_icon">
+                        <!-- <a href="https://maps.app.goo.gl/rSqyUf8o2iWruhhi8?g_st=aw" target="_blank"> -->
+                           <img src="images/map-icon.png">
+                           <span style="padding-left: 10px; font-family: Arial, sans-serif; font-size: 16px; ">
+                            Palakkarai Trichy - 620008
+                        </span>
+                        
+                        </a>
+                     </div>  
+                    <!-- Phone number: WhatsApp link -->
+                    <div class="map_icon">
+                       <a href="https://wa.me/8778612248" target="_blank">
+                          <img src="images/call-icon.png">
+                          <span class="paddlin_left_0">+91 8778612248</span>
+                       </a>
+                    </div>
+                    <!-- Email: Mailto link -->
+                    <div class="map_icon">
+                       <a href="mailto:growwakeofficial@gmail.com">
+                          <img src="images/mail-icon.png">
+                          <span class="paddlin_left_0">growwakeofficial@gmail.com</span>
+                       </a>
+                    </div>
+                 </div>
+        
+                <div class="col-lg-3 col-sm-6">
+                    <h1 class="adderss_text">QUICK NAVIGATION</h1>
+                    <div class="Useful_text">
+                        <a href="index.html">Home</a> <br>
+                        <a href="about.html">About Us</a> <br>
+                        <a href="services.html">Services</a> <br>
+                        <a href="career.html">Careers</a> <br>
+                        <a href="contact.html">Contact Us</a> <br>
+                        <a href="./term.html">Terms And Conditions</a> <br>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h1 class="adderss_text">FEEDBACK</h1>
+                    <!-- WhatsApp link with logo -->
+                    <div class="map_icon">
+                        <!-- WhatsApp Link with the country code and phone number -->
+                        <a href="https://wa.me/+918778612248" target="_blank">
+                            <!-- WhatsApp Icon from Font Awesome -->
+                            <i class="fab fa-whatsapp" style="color: green;"></i>
+                            <!-- Display phone number with country code -->
+                            <span class="paddlin_left_0">+91 8778612248</span>
+                        </a>
+                    </div>
+                    <!-- enquiry bt -->
+                <div class="subscribe_bt">
+                    <a href="https://wa.me/+918778612248">More Enquiry</a>
+                 </div>           
+                    <div class="social_icon">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=61570572741744&mibextid=ZbWKwL">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/Grow_Wake?t=FyFpyRsXWOpjzX2ypnrtSg&s=09">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/grow_wake007/profilecard/?igsh=MWVjeWU5aWIzbHU4bA==">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright_section">
+                    <div class="container">
+                       <p class="copyright_text">Grow Wake Pvt.Ltd copyrights 2024 </p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script>
+       // Initialize EmailJS
+        (function () {
+         emailjs.init("nLt8rdjbooPP-J5Az"); // Replace 'your_user_id' with your actual EmailJS user ID
+        })();
+
+       // Handle form submission
+       document.getElementById("contactForm").addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent default form submission
+          
+          // Define your EmailJS service ID and template ID
+          const serviceID = "service_2ogtwbb"; // Replace with your EmailJS Service ID
+          const templateID = "template_cgeo1um"; // Replace with your EmailJS Template ID
+
+          // Send form data
+          emailjs.sendForm(serviceID, templateID, this)
+             .then(() => {
+                alert("Your message has been sent successfully!");
+                document.getElementById("contactForm").reset();
+             })
+             .catch((error) => {
+                alert("Failed to send email. Error: " + JSON.stringify(error));
+             });
+       });
+
+       // dfdfdfd
+
+       function toggleRow(rowId) {
+    const content = document.getElementById(`row-${rowId}`);
+    const icon = document.getElementById(`icon-${rowId}`);
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        icon.textContent = "-"; // Change icon to minus when open
+        icon.classList.add("open");
+    } else {
+        content.style.display = "none";
+        icon.textContent = "+"; // Change icon to plus when closed
+        icon.classList.remove("open");
+    }
+}
+
+///yfuyvfu
+//whatapp country code //
+
+ function updatePhoneNumber() {
+        var countryCode = '+91'; 
+        var localNumber = '8778612248'; 
+        
+        var fullPhoneNumber = countryCode + localNumber;
+        
+        document.getElementById('whatsapp-link').href = 'https://wa.me/' + fullPhoneNumber;
+
+        document.getElementById('8778612248').textContent = countryCode + ' ' + localNumber;
+    }
+
+    updatePhoneNumber();
+
+    </script>
+
+</body>
+</html> 

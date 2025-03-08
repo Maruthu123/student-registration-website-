@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Contact Us</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+       <!--social media icon website-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <!-- EmailJS -->
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script>
+         (function() {
+            emailjs.init("nLt8rdjbooPP-J5Az"); // Replace with your EmailJS user ID
+         })();
+      </script>
+   </head>
+   <style>
+    /* .course-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+    } */
+    /* .course-container select { */
+      /* flex: 1 1 calc(20% - 10px); */
+       /* Adjusts width to fit 5 items in one row */
+      /* min-width: 150px; */
+    /* } */
+
+    /* body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        } */
+        .register-box {
+            background: #50a8a8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+            color: #fff;
+        }
+        .register-box h1 {
+            margin-bottom: 20px;
+            color: #fff;
+            border-bottom: 2px dotted #fff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .register-box input, .register-box select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .register-box .submit-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .register-box .submit-button:hover {
+            background-color: #218838;
+        }
+        .error-message {
+            color: red;
+            font-size: 14px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 1px dashed #fff;
+            padding-bottom: 5px;
+        }
+
+
+
+
+
+  </style> 
+  
+   <body>
+      <!-- header section start -->
+      <div class="header_section">
+         <nav class="navbar navbar-expand-lg navbar-light custom-navbar" id="navbar">
+        <div class="logo">
+            <a href="#"><img src="Logo Name.png" alt="Logo"></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="career.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+      
+    <script>
+      // Get the navbar element
+    const navbar = document.getElementById('navbar');
+    
+    // Function to handle the scroll effect
+    window.onscroll = function() {
+        if (window.scrollY > 50) {  // When user scrolls down 50px or more
+            navbar.classList.add('shrink');
+        } else {
+            navbar.classList.remove('shrink');
+        }
+    };
+    </script>
+    
+    <!-- Bootstrap JS and Popper (required for navbar toggle on mobile) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    
+      <!-- header section end -->
+      <!-- contact section start -->
+      <div class="contact_section layout_padding">
+         <div class="container">
+            <h1 class="contact_taital">WHAT HAVE WE ACHIEVED?</h1> 
+            <div class="news_section_2">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="icon_main">  
+                        <h4 class="diabetes_text">50+ INSTRUCTORS</h4>
+                     </div>
+                     <div class="icon_main">
+                        <h4 class="diabetes_text">500+ CERTIFICATIONS</h4>
+                     </div>
+                      <div class="icon_main">
+                        <h4 class="diabetes_text">1000+ STUDENTS</h4>
+                     </div>
+                  </div> <br><br>
+                  <div class="col-md-6">
+                     <div class="contact_box">
+                        <h1 class="book_text">Registration</h1>
+                        <div class="register-page">
+                           <form id="contact-form" class="Email_text">
+                             <input type="email" class="Email_text" placeholder="Email ID" name="email" required>
+                             <input type="text" class="Email_text" placeholder="Name" id="names" name="name" required>
+                             <input type="text" class="Email_text" placeholder="Qualification" name="qualification" required>
+                             <input type="tel" class="Email_text" placeholder="Phone No" name="phone" minlength="10" maxlength="10" required>
+                             <input class="Email_text" type="number" name="pass_out" id="year-of-passed-out" 
+                             placeholder="Passedout Year" min="2015" max="2025" required 
+                             oninput="this.value = this.value.slice(0, 4)">
+                             <select id="course" name="course" class="Email_text" required>
+                                <option value="" disabled selected>Select a Course</option>
+                                <option value="Software-Testing">Software Testing</option>
+                                <option value="Multi-Media">Multi Media</option>
+                                <option value="Devops">DevOps</option>
+                                <option value="Digital-Marketing">Digital Marketing</option>
+                                <option value="IoT">IOT(internet of things)</option>
+                                <option value="Data-Analyst">Data Analyst</option>
+                                <option value="Front-End-Developer">Front-End Developer</option>
+                                <option value="Back-End-Developer">Back-End Developer</option>
+                                <option value="Full-Stack-Developer">Full-Stack Developer</option>
+                                <option value="Graphic-Designer">Graphic Designer</option>
+                                <option value="AI">AI (Artificial Intelligence)</option>
+                                <option value="ML">ML (Machine Learning)</option>
+                                <option value="Python Developer">Python Developer</option>
+                                <option value="Cloud-Computing">AWS and Cloud Computing</option>
+                                <option value="MERN-Stack">MERN Stack</option>
+                            </select>
+                             <div class="submit-button-container">
+                               <input type="submit" value="Submit" class="submit-button">
+                             </div>
+                           </form>
+                         </div>
+                        </div>   
+                        <div id="errorbox" style="color: red; font-size:16px;"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+<script> 
+
+
+
+function validatePhoneNumber() {
+            let phoneInput = document.getElementById("phone");
+            let errorMessage = document.getElementById("error-message");
+            let phonePattern = /^[0-9]{10}$/; // Only allows 10 digits
+            
+            if (!phonePattern.test(phoneInput.value)) {
+                errorMessage.style.display = "block"; // Show error message
+                return false; // Prevent form submission
+            } else {
+                errorMessage.style.display = "none"; // Hide error if valid
+                return true; // Allow form submission
+            }
+        }
+
+
+
+document.querySelectorAll("#contactForm input, #contactForm textarea").forEach(input => {
+    input.addEventListener("blur", validateField);
+    input.addEventListener("input", validateField);
+});
+  document.addEventListener("DOMContentLoaded", function () {
+    const emailInput = document.querySelector('input[name="email"]');
+    const yearInput = document.querySelector('input[name="passout"]');
+    const courseInput = document.querySelector('select[name="course"]');
+    const phoneInput = document.querySelector('input[name="phone"]');  
+    // Add event listeners for real-time validation
+    emailInput.addEventListener("input", function () {
+      validateEmail(emailInput);
+    });
+    yearInput.addEventListener("input", function () {
+      validateYear(yearInput);
+    });
+    courseInput.addEventListener("change", function () {
+      validateCourse(courseInput);
+    });
+    phoneInput.addEventListener("input", function () {
+      validatePhone(phoneInput);
+    });
+});
+// Validation functions
+function validateEmail(inputElement) {
+    const email = inputElement.value;
+    clearError(inputElement);
+    if (email !== email.toLowerCase()) {
+        displayError(inputElement, "Email must be in lowercase.");
+    }
+}
+function validateYear(inputElement) {
+    const year = inputElement.value;
+    clearError(inputElement);
+    if (!/^\d{10}$/.test(year)) {
+        displayError(inputElement, "Year of Passedout must be a 4-digit number.");
+    }
+} 
+function validateCourse(inputElement) {
+    const course = inputElement.value;
+    clearError(inputElement);
+    if (!course) {
+        displayError(inputElement, "Please select a valid course.");
+    }
+}
+ function validatePhone(inputElement) {
+   const phone = inputElement.value;
+        clearError(inputElement);
+    inputElement.value = phone.replace(/[^\d]/g, "");
+     if (phone.length !== 10) {
+         displayError(inputElement, "Phone number must be exactly 10 digits.");
+    }
+   else if (!/^\d+$/.test(phone)) {
+       displayError(inputElement, "Phone number must contain only numbers.");
+    }
+ }
+function validatePhone(inputElement) {
+    let phone = inputElement.value.replace(/[^\d]/g, ""); // Remove non-numeric characters
+    inputElement.value = phone; // Update input field with sanitized value
+
+    clearError(inputElement); // Clear previous error messages
+
+    if (phone.length < 10) {
+        displayError(inputElement, "Phone number must be exactly 10 digits.");
+    }
+}
+function displayError(inputElement, message) {
+    clearError(inputElement); // Ensure no duplicate error messages
+    const errorBox = document.createElement("div");
+    errorBox.className = "error-message";
+    errorBox.style.color = "red";
+    errorBox.style.fontSize = "0.9em";
+    errorBox.style.marginTop = "4px";
+    errorBox.textContent = message;
+    inputElement.insertAdjacentElement("afterend", errorBox);
+}
+function clearError(inputElement) {
+    const nextElement = inputElement.nextElementSibling;
+    if (nextElement && nextElement.classList.contains("error-message")) {
+        nextElement.remove();
+    }
+}
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();        
+        const isValid = validateForm();
+        if (!isValid) {
+            return;  
+        }
+        const formData = new FormData(form);
+        const formObject = {};
+        formData.forEach((value, key) => {
+            formObject[key] = value;
+        });
+        sendEmail(formObject);
+        form.reset();  
+        //alert("Form submitted successfully! You will be redirected.");
+        setTimeout(function () {
+            location.reload();  
+        }, 2000);  
+    });
+});
+function validateForm() {
+    const emailInput = document.querySelector('input[name="email"]');
+    const phoneInput = document.querySelector('input[name="phone"]');
+    const yearInput = document.querySelector('input[name="passout"]');
+    const courseInput = document.querySelector('select[name="course"]');
+
+//     if (!emailInput.value || emailInput.value !== emailInput.value.toLowerCase()) {
+//         alert("Please enter a valid lowercase email.");
+//         return false;
+//     }
+//     if (phoneInput.value.length !== 10 || !/^\d+$/.test(phoneInput.value)) {
+//         alert("Phone number must be exactly 10 digits and contain only numbers.");
+//         return false;
+//     }
+//   /*  if (yearInput.value.length !== 4 || !/^\d+$/.test(yearInput.value)) {
+//         alert("Year of passedout must be a 4-digit number.");
+//         return false;
+//     }  */
+//     if (!courseInput.value) {
+//         alert("Please select a valid course.");
+//         return false;
+//     }
+
+    return true; 
+}
+
+function sendEmail(formData) {
+    console.log("Sending email with the following data:", formData);
+
+    alert("Your data has been sent successfully!");
+}
+
+/// name only type for the text content condition ////
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const nameInput = document.querySelector('input[name="name"]');
+
+        nameInput.addEventListener("input", function () {
+            const nameValue = nameInput.value;
+            clearError(nameInput);
+
+            // Allow only letters and spaces
+            if (!/^[a-zA-Z\s]*$/.test(nameValue)) {
+                displayError(nameInput, "Name must contain only letters and spaces.");
+                nameInput.value = nameValue.replace(/[^a-zA-Z\s]/g, ""); // Remove invalid characters
+            }
+        });
+
+        function displayError(inputElement, message) {
+            clearError(inputElement); 
+            const errorBox = document.createElement("div");
+            errorBox.className = "error-message";
+            errorBox.style.color = "red";
+            errorBox.style.fontSize = "0.9em";
+            errorBox.style.marginTop = "4px";
+            errorBox.textContent = message;
+            inputElement.insertAdjacentElement("afterend", errorBox);
+        }
+        function clearError(inputElement) {
+            const nextElement = inputElement.nextElementSibling;
+            if (nextElement && nextElement.classList.contains("error-message")) {
+                nextElement.remove();
+            }
+        }
+    });
+/// end /////
+/// phone number only type for the number condition ////
+    document.addEventListener("DOMContentLoaded", function () {
+        const phoneInput = document.querySelector('input[name="phone"]');
+
+        // Real-time validation for the phone number field
+        phoneInput.addEventListener("input", function () {
+            const phoneValue = phoneInput.value;
+            clearError(phoneInput);
+
+            // Allow only numbers (digits)
+            if (!/^\d*$/.test(phoneValue)) {
+                displayError(phoneInput, "Phone number must contain only numbers.");
+                phoneInput.value = phoneValue.replace(/[^\d]/g, ""); // Remove invalid characters
+            }
+        });
+
+        // Helper function to display error messages
+        function displayError(inputElement, message) {
+            clearError(inputElement); // Ensure no duplicate error messages
+            const errorBox = document.createElement("div");
+            errorBox.className = "error-message";
+            errorBox.style.color = "red";
+            errorBox.style.fontSize = "0.9em";
+            errorBox.style.marginTop = "4px";
+            errorBox.textContent = message;
+            inputElement.insertAdjacentElement("afterend", errorBox);
+        }
+
+        // Helper function to clear error messages
+        function clearError(inputElement) {
+            const nextElement = inputElement.nextElementSibling;
+            if (nextElement && nextElement.classList.contains("error-message")) {
+                nextElement.remove();
+            }
+        }
+    });
+
+///// end ////
+/// qulification ///
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const qualificationInput = document.querySelector('input[name="qualification"]');
+
+        qualificationInput.addEventListener("input", function () {
+            const qualificationValue = qualificationInput.value;
+            clearError(qualificationInput);
+
+    
+            if (!/^[A-Za-z\s]*$/.test(qualificationValue)) {
+                displayError(qualificationInput, "Qualification must contain only letters and spaces.");
+                qualificationInput.value = qualificationValue.replace(/[^A-Za-z\s]/g, ""); // Remove invalid characters
+            }
+        });
+        function displayError(inputElement, message) {
+            clearError(inputElement); 
+            const errorBox = document.createElement("div");
+            errorBox.className = "error-message";
+            errorBox.style.color = "red";
+            errorBox.style.fontSize = "0.9em";
+            errorBox.style.marginTop = "4px";
+            errorBox.textContent = message;
+            inputElement.insertAdjacentElement("afterend", errorBox);
+        }
+
+    
+        function clearError(inputElement) {
+            const nextElement = inputElement.nextElementSibling;
+            if (nextElement && nextElement.classList.contains("error-message")) {
+                nextElement.remove();
+            }
+        }
+    });
+
+
+    //// whatsapp country code///
+    function updatePhoneNumber() {
+        var countryCode = '+91'; 
+        var localNumber = '8778612248'; 
+        
+        var fullPhoneNumber = countryCode + localNumber;
+        
+        document.getElementById('whatsapp-link').href = 'https://wa.me/' + fullPhoneNumber;
+
+        document.getElementById('8778612248').textContent = countryCode + ' ' + localNumber;
+    }
+
+    updatePhoneNumber();
+      
+      </script>
+      <!-- contact section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6">
+                  <div class="footer_logo">
+                     <!-- <a href="#"> -->
+                        <img src="Logo Name.png" alt="Logo">
+                     <!-- </a> -->
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                <h1 class="adderss_text">CONTACT US</h1>
+                <!-- Location Section with icon and address -->
+                <div class="map_icon">
+                    <!-- <a href="https://maps.app.goo.gl/rSqyUf8o2iWruhhi8?g_st=aw" target="_blank"> -->
+                       <img src="images/map-icon.png">
+                       <span style="padding-left: 10px; font-family: Arial, sans-serif; font-size: 16px; ">
+                        Palakkarai Trichy - 620008
+                    </span>
+                    
+                    </a>
+                 </div>
+                  <!-- Phone number: WhatsApp link -->
+                  <div class="map_icon">
+                    <!-- Link for dialing the phone number -->
+                    <a href="tel:+918778612248">
+                        <img src="images/call-icon.png" alt="Call Icon">
+                        <span class="paddlin_left_0">+91 8778612248</span>
+                    </a>
+                </div>
+                
+                  <!-- Email: Mailto link -->
+                  <div class="map_icon">
+                     <a href="mailto:growwakeofficial@gmail.com">
+                        <img src="images/mail-icon.png">
+                        <span class="paddlin_left_0">growwakeofficial@gmail.com</span>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="adderss_text">QUICK NAVIGATION</h1>
+                  <div class="Useful_text">
+                     <a href="index.html" >Home</a> <br>
+                     <a href="about.html">About Us</a> <br>
+                     <a href="services.html">Services</a> <br>
+                     <a href="career.html">Careers</a> <br>
+                     <a href="contact.html">Contact Us</a> <br>
+                     <a href="./term.html">Terms And Conditions</a> <br>
+                     <a href="privacy-policy.html">Privacy Policy</a>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                <h1 class="adderss_text">FEEDBACK</h1>
+                <!-- WhatsApp link with logo -->
+                <div class="map_icon">
+                    <a href="https://wa.me/+918778612248" target="_blank">
+                        <!-- WhatsApp icon from Font Awesome -->
+                        <i class="fab fa-whatsapp"style="color:green"></i>
+                        <span class="paddlin_left_0">+91 8778612248</span>
+                    </a>
+                </div>
+
+
+
+
+
+                <!-- enquiry bt -->
+                <div class="subscribe_bt">
+                    <a href="https://wa.me/+918778612248">More Enquiry</a>
+                 </div>
+
+
+
+
+
+                  <div class="social_icon">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=61570572741744&mibextid=ZbWKwL">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/Grow_Wake?t=FyFpyRsXWOpjzX2ypnrtSg&s=09">
+                                <i class="fa-brands fa-twitter"></i> 
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.instagram.com/grow_wake007/profilecard/?igsh=MWVjeWU5aWIzbHU4bA==">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.linkedin.com">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+               </div>
+               <div class="copyright_section">
+                <div class="container">
+                   <p class="copyright_text">Grow Wake Pvt.Ltd copyrights 2024 </p>
+                </div>
+             </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- Javascript files-->
+      <script>
+         document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const serviceID = "service_2ogtwbb"; // Replace with your EmailJS Service ID
+            const templateID = "template_x47os2j"; // Replace with your EmailJS Template ID
+
+            emailjs.sendForm(serviceID, templateID, this)
+               .then(() => {
+                  alert("Registration details sent successfully!");
+               }, (error) => {
+                  alert("Failed to send email. Please try again. Error: " + JSON.stringify(error));
+               });
+         });
+
+  const courseInput = document.getElementById('course');
+  const courseOptions = document.getElementById('course-options');
+
+  // Show dropdown on input click
+  courseInput.addEventListener('click', () => {
+    courseOptions.style.display = courseOptions.style.display === 'none' ? 'block' : 'none';
+  });
+
+  // Handle selection from the list
+  courseOptions.addEventListener('click', (event) => {
+    if (event.target.tagName === 'LI') {
+      courseInput.value = event.target.textContent;
+      courseInput.setAttribute('data-value', event.target.getAttribute('data-value'));
+      courseOptions.style.display = 'none';
+    }
+  });
+
+
+      </script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/owl.carousel.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   </body>
+</html>
